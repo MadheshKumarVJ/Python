@@ -9,3 +9,9 @@ elif check=="N" or check=="n":
     print("absent")
 else:
     print("Enter a valide input")
+
+#for loop
+employees=["Madhesh","Deepak","karthi"]
+print("printing Employee names")
+for employee in employees:
+    print(employee)

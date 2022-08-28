@@ -15,3 +15,11 @@ employees=["Madhesh","Deepak","karthi"]
 print("printing Employee names")
 for employee in employees:
     print(employee)
+#while
+flag = True
+breaker = 5
+while flag:
+    print("Inside while")
+    if breaker==5:
+        break
+

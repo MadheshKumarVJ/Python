@@ -5,14 +5,19 @@ class TestPressEmployee:
         self.name = name
         print(self.name)
     def BussinessTeam(self):
-        print("Bussiness Team")
+        return "Bussiness Team"
     def DeveloperTeam(self):
-        print("Developer")
+        return "Developer"
+    def __str__(self):
+        return "This is {}".format(self.name)
 
 #creating object
-Madhesh = TestPressEmployee("Madhesh")
+Madhesh = TestPressEmployee("Madhesh kumar")
+Bhuvi =TestPressEmployee("Bhuvi")
+Karthik = TestPressEmployee("Karthik")
 #refering values
 Madhesh.DeveloperTeam()
-
-Bhuvi =TestPressEmployee("Bhuvi")
 Bhuvi.BussinessTeam()
+#printing object
+print(Madhesh)
+print(Karthik)

@@ -1,4 +1,5 @@
-f = open("sample.txt","r")
+f = open("sample.txt","+")
+f.write("I am over riding sample.txt")
 text = f.read()
 print(text)
 f.close()

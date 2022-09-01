@@ -1,3 +1,6 @@
+from math import e
+
+
 class Error(Exception):
     """Base class for other exceptions"""
     pass
@@ -9,7 +12,11 @@ try:
     age = int(input("Enter your age"))
     if (age<19):
         raise belowAge
-    else:
-        print("You can vote")
 except belowAge:
     print(belowAge.__doc__)
+except Error:
+    print("I am simply a error")
+except ValueError:
+    print("Invalide input")
+else:
+    print("You can vote")

@@ -1,5 +1,7 @@
-f = open("sample.txt","w+")
-f.write("I am over riding sample.txt")
-text = f.read()
-print(text)
-f.close()
+try:
+    f = open("sample.txt","w+")
+    f.write("using try catch")
+    text = f.read()
+    print(text)
+finally:
+    f.close()

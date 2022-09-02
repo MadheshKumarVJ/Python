@@ -6,11 +6,13 @@ def oncam(fun):
     return inner
 
 
+#using @decmethod insted of cam=oncam(cam)
+@oncam
 #ordinary method
 def cam(click):
     print(click)
 
 photo = "Clicking image"
-#decorating a ordinary method
-cam = oncam(cam)
+
+#decorating a ordinary method @ plays its role here
 cam(photo)

@@ -1,15 +1,11 @@
 import re
 #balls in string
-balls ="red Green blue orange green white green yellow red green red green blue orange green white green yellow red green red green blue orange green white green yellow red green"
+balls ="Red Green blue orange green white green yellow red green red green blue orange green white green yellow red green red green blue orange green white green yellow red green"
 
-#search pattern a for green ball and yellow ball
-search_pattern_of_green_ball=r"(\bgreen+\b).+(\byellow+)"
-#finding all green balls position and storing it in a object
-green_balls= re.search(search_pattern_of_green_ball,balls,flags=re.I)
+#pattern need to be replaced
+search_pattern_of_green_ball=r"red"
+#repalcing red with orange
+bucket= re.sub(search_pattern_of_green_ball,"orange",balls,count=1,flags=re.I)
 
-#shows the result if they exist
-print(green_balls.groups())
-#first group
-print(green_balls.group(1))
-#second group
-print(green_balls.group(2))
+#shows the result 
+print(bucket)

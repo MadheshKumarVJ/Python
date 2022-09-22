@@ -36,3 +36,4 @@ if __name__=='__main__':
     for possibility in giveChange(inr):
         count +=1
         print(count,".",possibility)
+        #

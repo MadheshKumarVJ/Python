@@ -11,8 +11,8 @@ def second(runner):
         print("2.1st price")
     return inner
 
-@first
-@second
+@first #run=first(run) →(run_method)
+@second #run=second(run) →(run_method)
 def run(winningStatement):
     print(winningStatement)
 
